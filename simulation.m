@@ -12,13 +12,10 @@ classdef simulation < dynamicprops
     %         
     %         s.solve_waveguide_parameters;
     %         s.load_geometry;
-    %         s.construct_initial_pulse;
-    %         s.load_damage;
-    %         s.compute_DLA_parameters
     %
-    %         s.input_couple;
-    %         s.propagate_pulse;
+    %         s.compute_P_max;
     %         s.compute_gradient
+    %
     %         display(['gradient of ', num2str(s.G*1e6), ' MV/m']);
     
     properties (Constant)        
@@ -89,8 +86,8 @@ classdef simulation < dynamicprops
         limiting_factor;                    % string describing the limiting factor
         limiting_factor_index;              % identifying index for factor (1-> input 2-> acc 3-> SPM 4-> SF)
         % DLA parameters
-        Q = 120;                                  % DLA quality factor (computed in obj.solve_DLA_parameters)
-        T_at_Q1 = 0.0357;                            % gradient at f = f0 and Q=1. For Q > 1, G(f0) = T_at_Q1*sqrt(Q)
+        Q = 120;                            % DLA quality factor
+        T_at_Q1 = 0.0357;                   % gradient at f = f0 and Q=1. For Q > 1, G(f0) = T_at_Q1*sqrt(Q)
         ws;
         g_w;
         g_w_ZX;      
@@ -208,7 +205,7 @@ classdef simulation < dynamicprops
         
         
         function obj = compute_P_max(obj)
-            
+            % computes the fields corresponding to the limiting constraints
             if (obj.verbose)
                 display('    computing maximum input powers...');
             end            
@@ -252,6 +249,8 @@ classdef simulation < dynamicprops
         end
         
         function obj = compute_gradient(obj)
+            % uses Lorentzian fit to approximate frequency response and
+            % solve for acceleration gradient and energy gain.
             if (obj.verbose)
                 display('    computing gradient...');
             end                    

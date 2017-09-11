@@ -7,3 +7,7 @@ The main codebase is in simulation.m  This defines the simulation class, which h
 
 Simple examples are in simple_examples.m to get to know how the code works and solve some simple examples.
 
+type 
+    doc simulation
+
+in the matlab command line once added to path for documentation
