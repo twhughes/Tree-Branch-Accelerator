@@ -1,8 +1,8 @@
 # DLA-Laser-Coupling-Simulation-Software
 
-Accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.
+Accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.  Right now it is an arXiv preprint.
 
-Link to paper will be here, as well as citation information.
+        https://arxiv.org/abs/1709.04441
 
 The main codebase is in simulation.m  This defines the simulation class, which has properties of parameters and methods corresponding to solving different quantities.
 
