@@ -4,16 +4,15 @@ Accompanying a paper on on-chip laser coupling for dielectric laser accelerator 
 
         https://arxiv.org/abs/1709.04441
 
-The main codebase is in simulation.m  This defines the simulation class, which has properties of parameters and methods corresponding to solving different quantities.
+The main codebase is in "simulation.m"  This defines the simulation class, which holds both the properties of parameters and methods corresponding to solving the laser coupling system.
 
-Simple examples are in simple_examples.m to get to know how the code works and solve some simple examples.
+Simple examples are in the appropriately named "simple_examples.m", which will help new users get to know how the code works and solve some simple examples.
 
-type 
-
+For documentation, type:
 
         doc simulation
 
-in the matlab command line once added to path for documentation
+in the matlab command line once the directory is added to path
 
 If you would like to use this code, please cite the paper:
 
@@ -24,3 +23,4 @@ If you would like to use this code, please cite the paper:
           journal={arXiv preprint arXiv:1709.04441},
           year={2017}
         }
+
