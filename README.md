@@ -4,7 +4,7 @@
 ## Paper information
 Accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.  Right now it is an arXiv preprint.
 
-        [ArXiv preprint](https://arxiv.org/abs/1709.04441 "ArXiv preprint")
+[ArXiv preprint](https://arxiv.org/abs/1709.04441 "ArXiv preprint")
 
 ## How to run simulation
 The main codebase is in "simulation.m"  This defines the simulation class, which holds both the properties of parameters and methods corresponding to solving the laser coupling system.
