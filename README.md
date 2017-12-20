@@ -1,15 +1,22 @@
 # DLA-Laser-Coupling-Simulation-Software
 
+![alt text](https://github.com/twhughes/DLA-Laser-Coupling-Simulation-Software/blob/master/images/structure.png 'test')
+
 ## Contents
-This software package is used to simulate an optical power delivery system for dielectric laser accelerators.  The structure consists of a fractal waveguide network as described in the accompanying paper.  This code takes as input all of the assumed parameters for the system (defaults assigned automatically) and computes the energy gain and acceleration gradient from the resulting structure.  First, all of the input fields necessary to cause:
+This software package is used to simulate an optical power delivery system for dielectric laser accelerators.  The structure consists of a fractal waveguide network as described in the accompanying paper.  This code takes as input all of the assumed parameters for the system (defaults assigned automatically) and computes the energy gain and acceleration gradient from the resulting structure with the following procedure:
+1. Find the largest input power (given the parameters) to avoid all of the following
 - damage at the accelerator structures
 - damage at the input facet
 - self-phase modulation and pulse degradation in the waveguides
 - self-focusing effects in the waveguides
-are computed.  The minimum constraint is then set as the limiting input electric field.  Perfectly phased output ports are assumed in the simulations.
+2. Propagate this pulse through the waveguides and splits, incorporating loss.
+3. Compute the energy gain in the DLA assuming perfect phasing of output ports.
+
+A plot of several combinations of pulse duration and Q factor is shown here
+![alt text](https://github.com/twhughes/DLA-Laser-Coupling-Simulation-Software/blob/master/images/results.png 'test')
 
 ## Paper information
-Accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.  Right now it is an arXiv preprint.
+This is the code accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.  Right now it is an arXiv preprint.
 
 [ArXiv preprint](https://arxiv.org/abs/1709.04441 "ArXiv preprint")
 
