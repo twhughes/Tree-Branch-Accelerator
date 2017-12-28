@@ -1,4 +1,5 @@
 clear all; clc;
+addpath(genpath('./'))
 % This is intended to help a new user get started with the simulation
 % class.  
 % To get started working on this, you must be inside of the main directory.

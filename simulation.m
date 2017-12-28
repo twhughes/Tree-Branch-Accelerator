@@ -171,11 +171,11 @@ classdef simulation < dynamicprops
             obj.Ls     = Ls_calc;
             obj.Rs     = Rs_calc;
             obj.thetas = thetas_calc;
-            
-            SOI_Rs = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/SOI_Rs.mat');
-            SOI_Ts = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/SOI_Ts.mat');
-            SiN_Rs = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/SiN_Rs.mat');
-            SiN_Ts = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/SiN_Ts.mat');
+            %{
+            SOI_Rs = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/data/SOI_Rs.mat');
+            SOI_Ts = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/data/SOI_Ts.mat');
+            SiN_Rs = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/data/SiN_Rs.mat');
+            SiN_Ts = open('~/Documents/Fan/ACHIP/DLA_Theory_Paper/Simple_Code_DLA_Laser_Couple/data/SiN_Ts.mat');
             
             SOI_Rs = SOI_Rs.SOI_Rs;
             SOI_Ts = SOI_Ts.SOI_Ts;
@@ -196,6 +196,7 @@ classdef simulation < dynamicprops
 %            bend_loss_dB_per_m = bend_loss_list_dB./dist_list;
 %            bend_loss_partial_bend = bend_loss_dB_per_m.*obj.Rs.*obj.thetas;                
 %            obj.bend_efficiency_list = ones(size(obj.bend_efficiency_list))' - 10.^(bend_loss_partial_bend/10);                
+            %}
         end
         function obj = load_damage(obj)
             % load damage data into function obj.Ed(tau) using the core of the given waveguide materials

@@ -16,13 +16,15 @@ Accompanying a paper on on-chip laser coupling for dielectric laser accelerator 
 ## How to run simulation
 The main codebase is in "simulation.m"  This defines the simulation class, which holds both the properties of parameters and methods corresponding to solving the laser coupling system.
 
-Simple examples are in the appropriately named "simple_examples.m", which will help new users get to know how the code works and solve some simple examples.
+Simple examples are in the appropriately named ```simple_examples.m```, which will help new users get to know how the code works and solve some simple examples.
 
 For documentation, type:
 
         doc simulation
 
 in the matlab command line once the directory is added to path
+
+There are auxilary functions in the ```components``` directory, which are used to simulate the DLA structures among other things.
 
 ## Citing our work
 

@@ -54,7 +54,7 @@ function frequency_scan(obj)
 
         P0 = [T_2(nf) nf 1];                                % starting guesses [P1 P2 P3] for lorenzian of form F(X) = P1/((X-P2)^2 + P3)
         BOUNDS = [0 nf-nf/3 -inf; inf nf+nf/3 inf];         % bounds for the fit parameters
-        [T2FIT, fit_params, ~, ~] = lorentzfit(fs_norm,T_2',P0,BOUNDS,'3',options);    % do the lorenzian fit
+        [T2FIT, fit_params, resnorm, residual] = lorentzfit(fs_norm,T_2',P0,BOUNDS,'3',options);    % do the lorenzian fit
         P2 = fit_params(2);                                 % get P2 (center of peak)
         P3 = fit_params(3);                                 % get P3
         TFIT = sqrt(T2FIT);                                 % T2FIT is the fit of gradient^2, TFIT is the fit of gradient
