@@ -13,12 +13,13 @@ This software package is used to simulate an optical power delivery system for d
 3. Compute the energy gain in the DLA assuming perfect phasing of output ports.
 
 A plot of several combinations of pulse duration and Q factor is shown here
+
 ![alt text](https://github.com/twhughes/DLA-Laser-Coupling-Simulation-Software/blob/master/images/results.png 'test')
 
 ## Paper information
-This is the code accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.  Right now it is an arXiv preprint.
+This is the code accompanying a paper on on-chip laser coupling for dielectric laser accelerator structures.
 
-[On-Chip Laser Power Delivery System for Dielectric Laser Accelerators](https://arxiv.org/abs/1709.04441 "ArXiv preprint")
+[On-Chip Laser Power Delivery System for Dielectric Laser Accelerators](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.9.054017)
 
 ## How to run simulation
 The main codebase is in "simulation.m"  This defines the simulation class, which holds both the properties of parameters and methods corresponding to solving the laser coupling system.
@@ -38,10 +39,14 @@ There are auxilary functions in the ```components``` directory, which are used t
 If you would like to use this code, please cite the paper:
 
 
-        @article{hughes2017chip,
-          title={On-Chip Laser Power Delivery System for Dielectric Laser Accelerators},
-          author={Hughes, Tyler W and Tan, Si and Zhao, Zhexin and Sapra, Neil V and Lee, Yun Jo and Leedle, Kenneth J and Deng, Huiyang and Miao, Yu and Black, Dylan S and Qi, Minghao and others},
-          journal={arXiv preprint arXiv:1709.04441},
-          year={2017}
-        }
+@article{hughes2018chip,
+  title={On-Chip Laser-Power Delivery System for Dielectric Laser Accelerators},
+  author={Hughes, Tyler W and Tan, Si and Zhao, Zhexin and Sapra, Neil V and Leedle, Kenneth J and Deng, Huiyang and Miao, Yu and Black, Dylan S and Solgaard, Olav and Harris, James S and others},
+  journal={Physical Review Applied},
+  volume={9},
+  number={5},
+  pages={054017},
+  year={2018},
+  publisher={APS}
+}
 
