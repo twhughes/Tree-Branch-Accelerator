@@ -39,14 +39,14 @@ There are auxilary functions in the ```components``` directory, which are used t
 If you would like to use this code, please cite the paper:
 
 
-@article{hughes2018chip,
-  title={On-Chip Laser-Power Delivery System for Dielectric Laser Accelerators},
-  author={Hughes, Tyler W and Tan, Si and Zhao, Zhexin and Sapra, Neil V and Leedle, Kenneth J and Deng, Huiyang and Miao, Yu and Black, Dylan S and Solgaard, Olav and Harris, James S and others},
-  journal={Physical Review Applied},
-  volume={9},
-  number={5},
-  pages={054017},
-  year={2018},
-  publisher={APS}
-}
+        @article{hughes2018chip,
+          title={On-Chip Laser-Power Delivery System for Dielectric Laser Accelerators},
+          author={Hughes, Tyler W and Tan, Si and Zhao, Zhexin and Sapra, Neil V and Leedle, Kenneth J and Deng, Huiyang and Miao, Yu and Black, Dylan S and Solgaard, Olav and Harris, James S and others},
+          journal={Physical Review Applied},
+          volume={9},
+          number={5},
+          pages={054017},
+          year={2018},
+          publisher={APS}
+        }
 
